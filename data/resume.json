@@ -1,0 +1,81 @@
+{
+  "basics": {
+    "name": "곽정웅",
+    "label": "Software Engineer",
+    "email": "hitel00000@gmail.com",
+    "url": "https://github.com/hitel00000",
+    "summary": "소프트웨어 엔지니어. 실시간 백엔드 시스템, 개발 생산성, 분산 시스템, 백엔드 아키텍처에 관심이 있습니다. 게임 서버 개발과 공용 플랫폼 설계 경험을 바탕으로 유지보수성과 운영성을 고려한 시스템 설계를 지향합니다.",
+    "location": {
+      "city": "서울"
+    }
+  },
+  "work": [
+    {
+      "name": "NEXON Korea",
+      "position": "게임 서버 프로그래머 / 팀 리드",
+      "startDate": "2013-08",
+      "endDate": "2024-05",
+      "summary": "실시간 게임 백엔드, 공용 서버 엔진, 개발 생산성 개선을 중심으로 서버 개발 및 기술 리딩을 수행했습니다.",
+      "highlights": [
+        "공용 서버 엔진 설계 및 팀 리드 경험",
+        "성능, 안정성, 유지보수성을 고려한 서버 엔진 구조 설계",
+        "개발 생산성 향상을 위한 공통 시스템 및 워크플로우 개선",
+        "FACEPLAY 서비스 초기 백엔드 설계",
+        "WebRTC 오픈소스 앞단에 백엔드 프록시를 설계하여 OSS 수정 없이 상태 관측성과 운영 제어를 확보"
+      ]
+    },
+    {
+      "name": "SOOP (구 아프리카TV)",
+      "position": "전임연구원",
+      "startDate": "2010-03",
+      "endDate": "2013-08",
+      "summary": "서버 측 대용량 처리 기술 연구 및 백엔드 시스템 개발에 참여했습니다.",
+      "highlights": [
+        "대용량 트래픽 환경을 고려한 서버 처리 기술 연구",
+        "실서비스를 고려한 서버 측 기술 검토 및 개발"
+      ]
+    },
+    {
+      "name": "Career Break",
+      "position": "재정비 기간",
+      "startDate": "2024-05",
+      "endDate": "Present",
+      "summary": "장기간 고강도 업무 이후 재정비에 집중했습니다. 최근에는 AI-assisted engineering workflow와 개발 생산성 향상 방식에 관심을 두고 기술 탐색을 재개하고 있습니다.",
+      "highlights": [
+        "AI-assisted workflow 탐색",
+        "개발 생산성 중심의 엔지니어링 방식 연구"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "서울대학교",
+      "area": "컴퓨터공학부",
+      "studyType": "학사"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Core",
+      "keywords": [
+        "개발 생산성",
+        "C#",
+        "분산 시스템",
+        "백엔드 아키텍처",
+        "실시간 네트워크",
+        "Linux"
+      ]
+    },
+    {
+      "name": "Strong Working Knowledge",
+      "keywords": [
+        "C++",
+        "Windows",
+        "서버 운영",
+        "DevOps / Infra",
+        "플랫폼 설계",
+        "기술 리딩"
+      ]
+    }
+  ]
+}
