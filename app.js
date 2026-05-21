@@ -87,12 +87,17 @@ async function init() {
 
     <section id="contact">
       <h2>연락처</h2>
-      <p>${profile.email}</p>
-      <p>
-        <a href="${profile.github}" target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
-      </p>
+      <div class="card">
+        <a href="mailto:${profile.email}">
+          ${profile.email}
+        </a> 
+        <p>
+          <a href="${profile.github}" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </p>
+      </div>
+      <small>${profile.footer}</small>
     </section>
   `;
 }
