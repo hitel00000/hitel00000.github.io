@@ -122,7 +122,7 @@ async function init() {
       </div>
     </section>
 
-    <section id="resume">
+    <section id="skills">
       <h2>기술 스택</h2>
       <div class="web-skills">
         ${resume.skills.map(skill => `
