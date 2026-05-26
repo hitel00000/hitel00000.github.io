@@ -6,17 +6,16 @@ async function loadJson(path) {
 function renderProject(project) {
   return `
     <div class="card">
-      <h3>${project.name}</h3>
+      <div class="item-heading">
+        <h3>${project.name}</h3>
+        ${project.status ? `<p class="meta">${project.status}</p>` : ''}
+      </div>
       <p>${project.description}</p>
 
       ${project.details?.length ? `
         <ul>
           ${project.details.map(x => `<li>${x}</li>`).join('')}
         </ul>
-      ` : ''}
-
-      ${project.status ? `
-        <small>${project.status}</small>
       ` : ''}
     </div>
   `;
@@ -34,6 +33,7 @@ async function init() {
     <section id="home">
       <h2>${profile.name}</h2>
       <p><strong>${profile.title}</strong></p>
+      <p class="summary">${profile.summary}</p>
 
       <div class="card">
         ${profile.intro
@@ -41,17 +41,22 @@ async function init() {
           .join('')}
       </div>
 
-      <p><strong>관심 분야</strong></p>
-      <p>${profile.focus.join(' · ')}</p>
+      <div class="focus-tags" aria-label="관심 분야">
+        ${profile.focus.map(item => `<span>${item}</span>`).join('')}
+      </div>
     </section>
 
     <section id="experience">
       <h2>경력</h2>
       ${resume.work.map(job => `
         <div class="card">
-          <h3>${job.name}</h3>
-          <p><strong>${job.position}</strong></p>
-          <p>${job.startDate} ~ ${job.endDate}</p>
+          <div class="item-heading">
+            <div>
+              <h3>${job.name}</h3>
+              <p class="role">${job.position}</p>
+            </div>
+            <p class="meta">${job.startDate} ~ ${job.endDate}</p>
+          </div>
           <p>${job.summary}</p>
 
           ${job.highlights?.length ? `
