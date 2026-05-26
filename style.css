@@ -277,7 +277,7 @@ body.print-mode {
 }
 
 .print-mode .print-resume-header {
-  margin-bottom: 24px;
+  margin-bottom: 36px;
   padding: 0;
 }
 
@@ -315,7 +315,7 @@ body.print-mode {
 }
 
 .print-mode section {
-  margin-bottom: 22px;
+  margin-bottom: 34px;
   padding-top: 0;
 }
 
@@ -442,7 +442,7 @@ body.print-mode {
   }
 
   .print-resume-header {
-    margin-bottom: 17pt;
+    margin-bottom: 26pt;
     padding: 0;
   }
 
@@ -480,7 +480,7 @@ body.print-mode {
   }
 
   section {
-    margin-bottom: 16pt;
+    margin-bottom: 25pt;
     padding-top: 0;
   }
 
