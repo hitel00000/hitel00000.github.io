@@ -176,6 +176,12 @@ small {
   margin: 4px 0 0;
 }
 
+.print-resume-header,
+.print-projects,
+.print-skills {
+  display: none;
+}
+
 @media (max-width: 860px) {
   body {
     display: block;
@@ -233,6 +239,143 @@ small {
   padding-top: 40px;
 }
 
+body.print-mode {
+  display: block;
+  max-width: 860px;
+  padding: 28px 36px 56px;
+  color: #111;
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.48;
+}
+
+.print-mode main {
+  padding: 0;
+}
+
+.print-mode .print-resume-header,
+.print-mode .print-projects,
+.print-mode .print-skills {
+  display: block;
+}
+
+.print-mode #home,
+.print-mode #taste,
+.print-mode #contact,
+.print-mode .print-button,
+.print-mode .web-projects,
+.print-mode .web-skills {
+  display: none;
+}
+
+.print-mode .print-resume-header {
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.print-mode .print-resume-header h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.15;
+}
+
+.print-mode .print-title {
+  margin: 4px 0 8px;
+  font-weight: 700;
+}
+
+.print-mode .print-contact,
+.print-mode .print-summary,
+.print-mode .print-intro p {
+  margin: 0 0 5px;
+}
+
+.print-mode .print-contact {
+  color: #333;
+  font-size: 13px;
+}
+
+.print-mode .print-contact span {
+  margin: 0 6px;
+}
+
+.print-mode .print-summary {
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.print-mode section {
+  margin-bottom: 22px;
+  padding-top: 0;
+}
+
+.print-mode section h2 {
+  margin: 0 0 9px;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.print-mode .card {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 13px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.print-mode .card h3 {
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.print-mode .card p {
+  margin-bottom: 5px;
+}
+
+.print-mode .item-heading {
+  gap: 18px;
+  margin-bottom: 4px;
+}
+
+.print-mode .role {
+  font-size: 13px;
+}
+
+.print-mode .meta {
+  font-size: 12px;
+}
+
+.print-mode ul {
+  margin-top: 5px;
+  padding-left: 18px;
+}
+
+.print-mode li {
+  margin-bottom: 2px;
+}
+
+.print-mode #projects {
+  break-before: page;
+  page-break-before: always;
+}
+
+.print-mode .skill-row {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 14px;
+  margin-bottom: 5px;
+}
+
+.print-mode .skill-row strong {
+  font-size: 12px;
+}
+
+.print-mode a {
+  text-decoration: none;
+}
+
 @media print {
   @page {
     size: A4;
@@ -270,17 +413,67 @@ small {
     padding: 0;
   }
 
+  .print-resume-header,
+  .print-projects,
+  .print-skills {
+    display: block;
+  }
+
+  #home,
+  #taste,
+  #contact,
+  .web-projects,
+  .web-skills {
+    display: none;
+  }
+
+  .print-resume-header {
+    margin-bottom: 17pt;
+    padding: 0;
+  }
+
+  .print-resume-header h1 {
+    margin: 0;
+    font-size: 20pt;
+    line-height: 1.1;
+  }
+
+  .print-title {
+    margin: 3pt 0 6pt;
+    font-weight: 700;
+  }
+
+  .print-contact,
+  .print-summary,
+  .print-intro p {
+    margin: 0 0 3pt;
+  }
+
+  .print-contact {
+    color: #333;
+    font-size: 9.5pt;
+  }
+
+  .print-contact span {
+    margin: 0 4pt;
+  }
+
+  .print-summary {
+    margin-top: 9pt;
+    font-weight: 700;
+  }
+
   section {
-    margin-bottom: 28pt;
-    padding-top: 14pt;
+    margin-bottom: 16pt;
+    padding-top: 0;
   }
 
   section h2 {
-    margin: 0 0 13pt;
+    margin: 0 0 7pt;
     padding: 0;
     border: 0;
     border-radius: 0;
-    font-size: 15pt;
+    font-size: 12pt;
     font-weight: 700;
     letter-spacing: 0;
     line-height: 1.15;
@@ -289,9 +482,9 @@ small {
 
   .card {
     border: 0;
-    border-radius: 7px;
-    background: #f4f4f4;
-    padding: 10pt 11pt;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
     margin-bottom: 9pt;
     break-inside: avoid;
     page-break-inside: avoid;
@@ -303,7 +496,7 @@ small {
   }
 
   .card p {
-    margin-bottom: 6pt;
+    margin-bottom: 4pt;
   }
 
   .summary {
@@ -327,7 +520,7 @@ small {
 
   .item-heading {
     gap: 12pt;
-    margin-bottom: 5pt;
+    margin-bottom: 3pt;
   }
 
   .role {
@@ -339,24 +532,28 @@ small {
   }
 
   ul {
-    margin-top: 5pt;
+    margin-top: 4pt;
+    padding-left: 15pt;
   }
 
   li {
+    margin-bottom: 2pt;
+  }
+
+  #projects {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .skill-row {
+    display: grid;
+    grid-template-columns: 72pt 1fr;
+    gap: 10pt;
     margin-bottom: 3pt;
   }
 
-  .contact-links {
-    font-size: 10.5pt;
-    line-height: 1.5;
-  }
-
-  .contact-links p {
-    margin: 2pt 0 0;
-  }
-
-  #contact small {
-    display: none;
+  .skill-row strong {
+    font-size: 9pt;
   }
 
   a {

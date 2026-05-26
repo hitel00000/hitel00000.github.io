@@ -3,7 +3,16 @@ async function loadJson(path) {
   return res.json();
 }
 
-function renderProject(project) {
+function isPrintRoute() {
+  return window.location.hash === '#print' ||
+    new URLSearchParams(window.location.search).get('print') === '1';
+}
+
+function renderProject(project, options = {}) {
+  const details = options.compact
+    ? project.details?.slice(0, 3)
+    : project.details;
+
   return `
     <div class="card">
       <div class="item-heading">
@@ -12,13 +21,36 @@ function renderProject(project) {
       </div>
       <p>${project.description}</p>
 
-      ${project.details?.length ? `
+      ${details?.length ? `
         <ul>
-          ${project.details.map(x => `<li>${x}</li>`).join('')}
+          ${details.map(x => `<li>${x}</li>`).join('')}
         </ul>
       ` : ''}
     </div>
   `;
+}
+
+function renderSkillRows(skills) {
+  const keywords = skills.flatMap(skill => skill.keywords);
+  const groups = [
+    ['Languages', ['C#', 'C++']],
+    ['Platform', ['Linux', 'Windows']],
+    ['Backend', ['분산 시스템', '백엔드 아키텍처', '실시간 네트워크', '서버 운영', '플랫폼 설계']],
+    ['Tooling', ['개발 생산성', 'DevOps / Infra', '기술 리딩']]
+  ];
+
+  return groups
+    .map(([name, candidates]) => {
+      const values = candidates.filter(item => keywords.includes(item));
+
+      return values.length ? `
+        <div class="skill-row">
+          <strong>${name}</strong>
+          <span>${values.join(', ')}</span>
+        </div>
+      ` : '';
+    })
+    .join('');
 }
 
 async function init() {
@@ -30,6 +62,22 @@ async function init() {
   ]);
 
   document.getElementById('app').innerHTML = `
+    <section class="print-resume-header" aria-label="Resume header">
+      <h1>${profile.name}</h1>
+      <p class="print-title">${profile.title}</p>
+      <p class="print-contact">
+        <a href="mailto:${profile.email}">${profile.email}</a>
+        <span>·</span>
+        <a href="${profile.github}" target="_blank" rel="noopener noreferrer">
+          ${profile.github.replace('https://', '')}
+        </a>
+      </p>
+      <p class="print-summary">${profile.summary}</p>
+      <div class="print-intro">
+        ${profile.intro.slice(1, 3).map(text => `<p>${text}</p>`).join('')}
+      </div>
+    </section>
+
     <section id="home">
       <h2>${profile.name}</h2>
       <p><strong>${profile.title}</strong></p>
@@ -70,7 +118,12 @@ async function init() {
 
     <section id="projects">
       <h2>프로젝트</h2>
-      ${projects.map(renderProject).join('')}
+      <div class="web-projects">
+        ${projects.map(project => renderProject(project)).join('')}
+      </div>
+      <div class="print-projects">
+        ${projects.map(project => renderProject(project, { compact: true })).join('')}
+      </div>
     </section>
 
     <section id="taste">
@@ -84,12 +137,17 @@ async function init() {
 
     <section id="resume">
       <h2>기술 스택</h2>
-      ${resume.skills.map(skill => `
-        <div class="card">
-          <h3>${skill.name}</h3>
-          <p>${skill.keywords.join(' · ')}</p>
-        </div>
-      `).join('')}
+      <div class="web-skills">
+        ${resume.skills.map(skill => `
+          <div class="card">
+            <h3>${skill.name}</h3>
+            <p>${skill.keywords.join(' · ')}</p>
+          </div>
+        `).join('')}
+      </div>
+      <div class="print-skills">
+        ${renderSkillRows(resume.skills)}
+      </div>
     </section>
 
     <section id="contact">
@@ -111,13 +169,13 @@ async function init() {
 
 init();
 
-const isPrintMode =
-  new URLSearchParams(window.location.search)
-    .get('print') === '1';
-
-if (isPrintMode) {
+if (isPrintRoute()) {
   document.body.classList.add('print-mode');
 }
+
+window.addEventListener('hashchange', () => {
+  document.body.classList.toggle('print-mode', isPrintRoute());
+});
 
 const printButton = document.getElementById('print-button');
 
