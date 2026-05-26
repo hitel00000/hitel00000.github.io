@@ -13,7 +13,7 @@
   },
   {
     "name": "away",
-    "description": "IRC 기반 커뮤니케이션 워크플로우를 mobile-first 환경으로 재구성하는 도구",
+    "description": "IRC 기반 커뮤니케이션 workflow를 모바일 환경 중심으로 재구성하는 도구",
     "details": [
       "오랫동안 사용해온 screen + irssi workflow를 모바일 환경 중심으로 재설계",
       "새로운 플랫폼 도입보다 기존 프로토콜과 습관을 유지하는 방향 선택",

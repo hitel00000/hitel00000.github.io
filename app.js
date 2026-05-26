@@ -69,7 +69,6 @@ async function init() {
     <section id="home">
       <h2>${profile.name}</h2>
       <p><strong>${profile.title}</strong></p>
-      <p class="summary">${profile.summary}</p>
 
       <div class="card">
         ${profile.intro

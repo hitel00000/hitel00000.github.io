@@ -4,7 +4,7 @@
     "label": "Software Engineer",
     "email": "hitel00000@gmail.com",
     "url": "https://github.com/hitel00000",
-    "summary": "소프트웨어 엔지니어. 실시간 서버, 공용 플랫폼, 개발 생산성에 관심이 있습니다. 게임 서버 개발과 공용 서버 엔진 설계 경험을 바탕으로 유지보수성과 운영성을 고려한 시스템 설계를 지향합니다.",
+    "summary": "실시간 서버, 공용 플랫폼, 개발 생산성 문제에 관심이 있습니다. 게임 서버 개발과 공용 서버 엔진 설계 경험을 바탕으로 유지보수성과 운영성을 고려한 시스템 설계를 지향합니다.",
     "location": {
       "city": "서울"
     }
@@ -40,7 +40,7 @@
       "position": "재정비 기간",
       "startDate": "2024-05",
       "endDate": "Present",
-      "summary": "장기간의 고강도 업무 이후 재정비 시간을 가지며, 다음 단계의 엔지니어링 방향을 정리하고 있습니다. 최근에는 AI-assisted engineering workflow와 개발 생산성 향상 방식을 중심으로 기술 탐색을 재개하고 있습니다.",
+      "summary": "장기간의 고강도 업무 이후 재정비 시간을 가지며, 다음 단계의 엔지니어링 방향을 정리했습니다. 최근에는 AI-assisted engineering workflow와 개발 생산성 중심의 개발 방식을 탐색하고 있습니다.",
       "highlights": [
         "AI-assisted workflow 탐색",
         "개발 생산성 중심의 엔지니어링 방식 연구"
@@ -68,7 +68,7 @@
         "Realtime server",
         "Networking",
         "Distributed systems",
-        "Backend architecture"
+        "Service architecture"
       ]
     },
     {
