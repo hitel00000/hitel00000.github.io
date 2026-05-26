@@ -70,9 +70,11 @@ async function init() {
 
     <section id="taste">
       <h2>엔지니어링 성향</h2>
-      <ul>
-        ${taste.preferences.map(x => `<li>${x}</li>`).join('')}
-      </ul>
+      <div class="card">
+        <ul>
+          ${taste.preferences.map(x => `<li>${x}</li>`).join('')}
+        </ul>
+      </div>
     </section>
 
     <section id="resume">
@@ -87,7 +89,7 @@ async function init() {
 
     <section id="contact">
       <h2>연락처</h2>
-      <div class="card">
+      <div class="contact-links">
         <a href="mailto:${profile.email}">
           ${profile.email}
         </a> 
