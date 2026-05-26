@@ -364,20 +364,21 @@ body.print-mode {
   margin-bottom: 2px;
 }
 
-.print-mode #projects {
+.print-mode .career-break {
   break-before: page;
   page-break-before: always;
 }
 
 .print-mode .skill-row {
   display: grid;
-  grid-template-columns: 92px 1fr;
-  gap: 14px;
-  margin-bottom: 5px;
+  grid-template-columns: 118px 1fr;
+  gap: 12px;
+  margin-bottom: 4px;
 }
 
 .print-mode .skill-row strong {
   font-size: 12px;
+  white-space: nowrap;
 }
 
 .print-mode .skill-row:first-child strong,
@@ -553,20 +554,21 @@ body.print-mode {
     margin-bottom: 2pt;
   }
 
-  #projects {
+  .career-break {
     break-before: page;
     page-break-before: always;
   }
 
   .skill-row {
     display: grid;
-    grid-template-columns: 72pt 1fr;
-    gap: 10pt;
+    grid-template-columns: 88pt 1fr;
+    gap: 8pt;
     margin-bottom: 3pt;
   }
 
   .skill-row strong {
     font-size: 9pt;
+    white-space: nowrap;
   }
 
   .skill-row:first-child strong,
