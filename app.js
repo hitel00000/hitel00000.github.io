@@ -84,7 +84,7 @@ async function init() {
     <section id="experience">
       <h2>경력</h2>
       ${resume.work.map(job => `
-        <div class="card ${job.name === 'Career Break' ? 'career-break' : ''}">
+        <div class="card">
           <div class="item-heading">
             <div>
               <h3>${job.name}</h3>

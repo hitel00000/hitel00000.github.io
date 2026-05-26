@@ -366,7 +366,7 @@ body.print-mode {
   margin-bottom: 2px;
 }
 
-.print-mode .career-break {
+.print-mode #projects {
   break-before: page;
   page-break-before: always;
 }
@@ -556,7 +556,7 @@ body.print-mode {
     margin-bottom: 2pt;
   }
 
-  .career-break {
+  #projects {
     break-before: page;
     page-break-before: always;
   }
