@@ -293,9 +293,12 @@ body.print-mode {
 }
 
 .print-mode .print-contact,
-.print-mode .print-summary,
-.print-mode .print-intro p {
+.print-mode .print-summary {
   margin: 0 0 5px;
+}
+
+.print-mode .print-intro p {
+  margin: 0 0 8px;
 }
 
 .print-mode .print-contact {
@@ -371,9 +374,10 @@ body.print-mode {
 
 .print-mode .skill-row {
   display: grid;
-  grid-template-columns: 118px 1fr;
-  gap: 12px;
-  margin-bottom: 4px;
+  grid-template-columns: 130px 1fr;
+  gap: 16px;
+  margin-bottom: 8px;
+  line-height: 1.45;
 }
 
 .print-mode .skill-row strong {
@@ -458,9 +462,12 @@ body.print-mode {
   }
 
   .print-contact,
-  .print-summary,
-  .print-intro p {
+  .print-summary {
     margin: 0 0 3pt;
+  }
+
+  .print-intro p {
+    margin: 0 0 6pt;
   }
 
   .print-contact {
@@ -561,9 +568,10 @@ body.print-mode {
 
   .skill-row {
     display: grid;
-    grid-template-columns: 88pt 1fr;
-    gap: 8pt;
-    margin-bottom: 3pt;
+    grid-template-columns: 100pt 1fr;
+    gap: 12pt;
+    margin-bottom: 6pt;
+    line-height: 1.45;
   }
 
   .skill-row strong {
