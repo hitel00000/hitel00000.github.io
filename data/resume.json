@@ -4,7 +4,7 @@
     "label": "Software Engineer",
     "email": "hitel00000@gmail.com",
     "url": "https://github.com/hitel00000",
-    "summary": "소프트웨어 엔지니어. 실시간 백엔드 시스템, 개발 생산성, 분산 시스템, 백엔드 아키텍처에 관심이 있습니다. 게임 서버 개발과 공용 플랫폼 설계 경험을 바탕으로 유지보수성과 운영성을 고려한 시스템 설계를 지향합니다.",
+    "summary": "소프트웨어 엔지니어. 실시간 서버, 공용 플랫폼, 개발 생산성에 관심이 있습니다. 게임 서버 개발과 공용 서버 엔진 설계 경험을 바탕으로 유지보수성과 운영성을 고려한 시스템 설계를 지향합니다.",
     "location": {
       "city": "서울"
     }
@@ -15,13 +15,12 @@
       "position": "게임 서버 프로그래머 / 공용 서버 엔진팀 리드",
       "startDate": "2013-08",
       "endDate": "2024-05",
-      "summary": "실시간 게임 서비스 백엔드 개발을 거쳐 공용 서버 엔진 설계 및 팀 리딩 업무를 수행했습니다. 공통 시스템을 정리하고, 개발 생산성과 운영성을 고려한 서버 구조를 설계하고 개선해 왔습니다.",
+      "summary": "실시간 게임 서버 개발에서 공용 서버 엔진 설계와 팀 리딩으로 역할을 확장했습니다. 여러 서비스가 공유할 수 있는 서버 구조, 개발 생산성, 운영 가능성을 중심으로 일했습니다.",
       "highlights": [
         "공용 서버 엔진 설계 및 팀 리딩",
-        "개발 생산성과 유지보수성을 고려한 서버 구조 설계",
+        "개발 생산성과 유지보수성을 고려한 공통 서버 시스템 정리 및 개선",
         "FACEPLAY 초기 백엔드 설계 참여",
-        "서든어택2 서버 개발 초기부터 참여 및 라이브 서비스 경험",
-        "프라시아전기 서버 개발 지원"
+        "서든어택2 초기 서버 개발 및 라이브 서비스 경험"
       ]
     },
     {
@@ -56,25 +55,35 @@
   ],
   "skills": [
     {
-      "name": "Core",
+      "name": "Primary",
       "keywords": [
-        "개발 생산성",
         "C#",
-        "분산 시스템",
-        "백엔드 아키텍처",
-        "실시간 네트워크",
-        "Linux"
+        "C++"
       ]
     },
     {
-      "name": "Strong Working Knowledge",
+      "name": "Backend / Systems",
       "keywords": [
-        "C++",
-        "Windows",
-        "서버 운영",
-        "DevOps / Infra",
-        "플랫폼 설계",
-        "기술 리딩"
+        "Realtime server",
+        "Networking",
+        "Distributed systems",
+        "Backend architecture"
+      ]
+    },
+    {
+      "name": "Platform",
+      "keywords": [
+        "Linux",
+        "Windows"
+      ]
+    },
+    {
+      "name": "Secondary",
+      "keywords": [
+        "Python",
+        "DevOps",
+        "CI/CD",
+        "Observability"
       ]
     }
   ]

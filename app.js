@@ -31,25 +31,13 @@ function renderProject(project, options = {}) {
 }
 
 function renderSkillRows(skills) {
-  const keywords = skills.flatMap(skill => skill.keywords);
-  const groups = [
-    ['Languages', ['C#', 'C++']],
-    ['Platform', ['Linux', 'Windows']],
-    ['Backend', ['분산 시스템', '백엔드 아키텍처', '실시간 네트워크', '서버 운영', '플랫폼 설계']],
-    ['Tooling', ['개발 생산성', 'DevOps / Infra', '기술 리딩']]
-  ];
-
-  return groups
-    .map(([name, candidates]) => {
-      const values = candidates.filter(item => keywords.includes(item));
-
-      return values.length ? `
-        <div class="skill-row">
-          <strong>${name}</strong>
-          <span>${values.join(', ')}</span>
-        </div>
-      ` : '';
-    })
+  return skills
+    .map(skill => `
+      <div class="skill-row">
+        <strong>${skill.name}</strong>
+        <span>${skill.keywords.join(', ')}</span>
+      </div>
+    `)
     .join('');
 }
 
@@ -139,7 +127,7 @@ async function init() {
       <h2>기술 스택</h2>
       <div class="web-skills">
         ${resume.skills.map(skill => `
-          <div class="card">
+          <div class="card skill-card ${skill.name === 'Primary' ? 'is-primary' : ''}">
             <h3>${skill.name}</h3>
             <p>${skill.keywords.join(' · ')}</p>
           </div>
