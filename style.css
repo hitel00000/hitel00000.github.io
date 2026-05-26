@@ -312,7 +312,6 @@ body.print-mode {
 
 .print-mode .print-summary {
   margin-top: 12px;
-  font-weight: 700;
 }
 
 .print-mode section {
@@ -385,10 +384,7 @@ body.print-mode {
   white-space: nowrap;
 }
 
-.print-mode .skill-row:first-child strong,
-.print-mode .skill-row:first-child span {
-  font-weight: 700;
-}
+
 
 .print-mode a {
   text-decoration: none;
@@ -481,7 +477,6 @@ body.print-mode {
 
   .print-summary {
     margin-top: 9pt;
-    font-weight: 700;
   }
 
   section {
@@ -579,10 +574,7 @@ body.print-mode {
     white-space: nowrap;
   }
 
-  .skill-row:first-child strong,
-  .skill-row:first-child span {
-    font-weight: 700;
-  }
+
 
   a {
     color: #111;
