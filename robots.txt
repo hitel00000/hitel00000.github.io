@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hitel00000.github.io/sitemap.xml
+Sitemap: https://hitel00000.github.io/dialogues/sitemap-index.xml
