@@ -136,6 +136,12 @@ section h2 {
   margin-bottom: 4px;
 }
 
+.job-note {
+  font-size: 0.88rem;
+  opacity: 0.75;
+  margin: 0 0 4px;
+}
+
 .role,
 .meta {
   margin: 0;
@@ -353,6 +359,12 @@ body.print-mode {
   font-size: 13px;
 }
 
+.print-mode .job-note {
+  font-size: 12px;
+  opacity: 0.7;
+  margin: 0 0 3px;
+}
+
 .print-mode .meta {
   font-size: 12px;
 }
@@ -541,6 +553,12 @@ body.print-mode {
 
   .role {
     font-size: 10pt;
+  }
+
+  .job-note {
+    font-size: 9pt;
+    opacity: 0.7;
+    margin: 0 0 3pt;
   }
 
   .meta {

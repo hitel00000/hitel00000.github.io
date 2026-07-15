@@ -88,6 +88,7 @@ async function init() {
           <div class="item-heading">
             <div>
               <h3>${job.name}</h3>
+              ${job.note ? `<p class="job-note">${job.note}</p>` : ''}
               <p class="role">${job.position}</p>
             </div>
             <p class="meta">${job.startDate} ~ ${job.endDate}</p>
