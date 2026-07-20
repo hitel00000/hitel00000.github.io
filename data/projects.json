@@ -4,11 +4,11 @@
     "github": "https://github.com/orphera/overmax",
     "description": "비침습적 화면 분석과 순수 Rust 파이프라인으로 구현한 초경량 실시간 게임 어시스턴트",
     "details": [
-      "게임 메모리 조작 및 안티치트 훅킹 없이 창 추적 기반으로 제로 리스크를 보장하는 비침습적(Non-invasive) 오버레이 아키텍처 설계",
-      "무거운 OpenCV 의존성 없이 순수 Rust HOG 자켓 매칭과 Windows Native OCR을 앙상블하여 초경량·고성능 컴퓨터 비전 파이프라인 구축",
-      "egui/winit 네이티브 UI로 런타임 메모리 소모를 극소화하고, 실시간 게임 환경에서도 흔들림 없는(Jitter-free) 콤팩트 레이아웃 구현",
-      "게임 실시간 상태 추적, SQLite 캐싱, V-Archive REST API 비동기 연동을 결합한 엔드투엔드 데이터 파이프라인 구축",
-      "Core/CV/Data/App 멀티 크레이트 분리 및 AI-assisted 개발 프로세스로 높은 테스트 가능성과 빠른 모듈성 확보"
+      "<strong>비침습적(Non-invasive) 아키텍처</strong>: 게임 메모리 조작 및 안티치트 훅킹 없이 창 추적 기반으로 제로 리스크 보장",
+      "<strong>초경량 CV 파이프라인</strong>: 무거운 OpenCV 대신 순수 Rust HOG 자켓 매칭과 Windows Native OCR 앙상블 구축",
+      "<strong>Jitter-free 네이티브 UI</strong>: egui/winit 기반으로 메모리 소모를 극소화하고 실시간 60fps 콤팩트 레이아웃 구현",
+      "<strong>엔드투엔드 데이터 파이프라인</strong>: 실시간 상태 추적, SQLite 캐싱, V-Archive REST API 비동기 연동 결합",
+      "<strong>멀티 크레이트 모듈성</strong>: Core/CV/Data/App 분리 및 AI-assisted 개발 프로세스로 높은 테스트 가능성 확보"
     ],
     "status": "개인 프로젝트 (진행 중)"
   },
@@ -16,10 +16,10 @@
     "name": "away",
     "description": "IRC 기반 커뮤니케이션 환경을 모바일 중심으로 재구성하는 도구",
     "details": [
-      "오랫동안 사용해온 screen + irssi workflow를 모바일 환경 중심으로 재설계",
-      "새로운 플랫폼 도입보다 기존 프로토콜과 습관을 유지하는 방향 선택",
-      "단순한 구조와 낮은 유지보수 비용을 우선한 설계 실험",
-      "기능 확장보다 예측 가능성과 단순함을 우선"
+      "<strong>모바일 중심 재설계</strong>: 오랫동안 사용해온 screen + irssi workflow를 모바일 환경 중심으로 재구성",
+      "<strong>기존 습관 유지</strong>: 새로운 플랫폼 도입보다 기존 IRC 프로토콜과 사용자 습관을 고수하는 방향 선택",
+      "<strong>극도의 미니멀리즘</strong>: 단순한 구조와 낮은 유지보수 비용을 최우선으로 한 아키텍처 실험",
+      "<strong>예측 가능성 제어</strong>: 무분별한 기능 확장보다 단순함과 안정적인 작동 예측 가능성 확보"
     ],
     "status": "개인 프로젝트 (진행 중)"
   }
