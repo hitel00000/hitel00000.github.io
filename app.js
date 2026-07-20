@@ -16,7 +16,12 @@ function renderProject(project, options = {}) {
   return `
     <div class="card">
       <div class="item-heading">
-        <h3>${project.name}</h3>
+        <div>
+          <h3>
+            ${project.name}
+            ${project.github ? `<a href="${project.github}" target="_blank" rel="noopener noreferrer" class="project-github-link" style="font-size: 0.85rem; font-weight: normal; margin-left: 8px; opacity: 0.75;">[GitHub]</a>` : ''}
+          </h3>
+        </div>
         ${project.status ? `<p class="meta">${project.status}</p>` : ''}
       </div>
       <p>${project.description}</p>
