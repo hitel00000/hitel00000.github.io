@@ -81,9 +81,22 @@ async function init() {
           .join('')}
       </div>
 
-      <div class="focus-tags" aria-label="관심 분야">
-        ${profile.focus.map(item => `<span>${item}</span>`).join('')}
-      </div>
+      ${profile.strengths?.length ? `
+        <div class="strengths-wrapper">
+          <h3 class="strengths-title">핵심 역량</h3>
+          <div class="strengths-grid">
+            ${profile.strengths.map(s => `
+              <div class="strength-card">
+                <h4>${s.title}</h4>
+                <p>${s.summary}</p>
+                <div class="strength-tags">
+                  ${s.keywords.map(kw => `<span>#${kw}</span>`).join('')}
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
     </section>
 
     <section id="experience">
