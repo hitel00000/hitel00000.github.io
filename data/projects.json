@@ -5,7 +5,7 @@
     "description": "비침습적 화면 분석과 순수 Rust 파이프라인으로 구현한 초경량 실시간 게임 어시스턴트",
     "details": [
       "<strong>비침습적(Non-invasive) 아키텍처</strong>: 게임 메모리 조작 및 안티치트 훅킹 없이 창 추적 기반으로 제로 리스크 보장",
-      "<strong>초경량 CV 파이프라인</strong>: 무거운 OpenCV 대신 순수 Rust HOG 자켓 매칭과 Windows Native OCR 앙상블 구축",
+      "<strong>순수 Rust CV 파이프라인</strong>: 무거운 OpenCV나 OS OCR 의존성 없이, 순수 Rust Perceptual Hash/히스토그램 및 템플릿 매칭 엔진 구축",
       "<strong>Jitter-free 네이티브 UI</strong>: egui/winit 기반으로 메모리 소모를 극소화하고 실시간 60fps 콤팩트 레이아웃 구현",
       "<strong>엔드투엔드 데이터 파이프라인</strong>: 실시간 상태 추적, SQLite 캐싱, V-Archive REST API 비동기 연동 결합",
       "<strong>멀티 크레이트 모듈성</strong>: Core/CV/Data/App 분리 및 AI-assisted 개발 프로세스로 높은 테스트 가능성 확보"
