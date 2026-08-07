@@ -13,13 +13,14 @@
     "status": "개인 프로젝트 (진행 중)"
   },
   {
-    "name": "away",
-    "description": "IRC 기반 커뮤니케이션 환경을 모바일 중심으로 재구성하는 도구",
+    "name": "mold",
+    "github": "https://github.com/hitel00000/mold",
+    "description": "Resource 정의(YAML) 하나로 DB 스키마, REST API, Auth, 기본 Web UI를 결정론적으로 자동 실행하는 백엔드 런타임",
     "details": [
-      "<strong>모바일 중심 재설계</strong>: 오랫동안 사용해온 screen + irssi workflow를 모바일 환경 중심으로 재구성",
-      "<strong>기존 습관 유지</strong>: 새로운 플랫폼 도입보다 기존 IRC 프로토콜과 사용자 습관을 고수하는 방향 선택",
-      "<strong>극도의 미니멀리즘</strong>: 단순한 구조와 낮은 유지보수 비용을 최우선으로 한 아키텍처 실험",
-      "<strong>예측 가능성 제어</strong>: 무분별한 기능 확장보다 단순함과 안정적인 작동 예측 가능성 확보"
+      "<strong>Resource 단일 진실 공급원(Single Source of Truth)</strong>: YAML 명세 하나로 SQLite DDL, Soft-delete, Pagination 포함 CRUD REST API 자동 생성",
+      "<strong>인증 & 권한 가드</strong>: Session Cookie 기반 인증 및 하강형(Cascading) 권한 검증과 제약조건 Validation 내장",
+      "<strong>기본 Web View (SSR)</strong>: 별도 프론트엔드 구축 없이 데이터 조회 및 입력/수정이 가능한 기본 HTML Form/List 뷰 제공",
+      "<strong>Zero Boilerplate & AI 친화적</strong>: 반복적인 백엔드 보일러플레이트를 제거하고 명세 기반으로 사람과 AI 에이전트가 협업하는 결정적 런타임"
     ],
     "status": "개인 프로젝트 (진행 중)"
   }
