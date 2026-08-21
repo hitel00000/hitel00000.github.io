@@ -10,6 +10,15 @@
   <title>곽정웅 · Software Engineer</title>
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Critical Request Chaining 완화를 위한 Preload -->
+  <link rel="preload" href="./data/profile.json" as="fetch" crossorigin />
+  <link rel="preload" href="./data/resume.json" as="fetch" crossorigin />
+  <link rel="preload" href="./data/projects.json" as="fetch" crossorigin />
+  <link rel="preload" href="./data/engineering-taste.json" as="fetch" crossorigin />
+
+  <!-- 렌더링 차단 방지 및 병렬 다운로드 -->
+  <script defer src="app.js"></script>
 </head>
 <body>
   <aside class="sidebar">
@@ -32,7 +41,5 @@
   <button id="print-button" class="print-button">
     PDF 저장 / 인쇄
   </button>
-
-  <script src="app.js"></script>
 </body>
 </html>
